@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraria Boss Progression</title>
+    <link rel="stylesheet" href="hardmode-boss.css">
+    <script src="hardmode-boss.js" defer></script>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-buttons">
+            <button>Hardmode Golem Progression</button>
+            <a href="/webdev-midterms/boss.html"><button>Pre Hardmode</button></a>
+            <a href="../post-plantera/post-golem.html"><button>Post Golem</button></a>
+        </div>
+        <div class="nav-center">Welcome to the Beginner Progression Guide</div>
+    </nav>
+    
+
+<div class="timeline-container">
+    <div class="timeline">
+        
+    
+        <div class="boss locked" id="boss9">
+            <img src="../images/Queen_Slime.png"  class="boss-image"> 
+            <input type="checkbox" id="check9" class="boss-checkbox" disabled>
+            <label for="check9">Queen Slime</label>
+            <button onclick="toggleDropdown('items9')">+</button>
+            <div class="items" id="items9" style="display: none;">
+                <button class="reset-button" onclick="resetBoss(this)">Reset</button>
+                <p>Melee Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Titanium Armor/Frost Armor/Orichalcum Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss9" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Shadowflame Knife
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Night's Edge
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+            
+    
+               
+                <p>Ranger Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Frost Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss9" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Onyx Blaster
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Daedalus Stormbow
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+    
+    
+         
+                <p>Mage Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Orichalcum Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss9" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Sky Fracture/Spirit Flame*
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Meteor Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Nimbus Rod/Clinger Staff/Golden Shower
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+             
+                <p>Summoner Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Obsidian Armor/Spider Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss9" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Firecracker
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Cool Whip
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Sanguine Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Blade Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss9" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+               
+                <p>Mage Accessories:</p><br>
+                <label class="item-label">
+                    Mana Cloak
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Sorcerer Emblem /Celestial Cuffs
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mana Regeneration Potion + Magic Power Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+             
+                <p>Melee Accessories:</p><br>
+                <label class="item-label">
+                    Berserker's Glove
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Tipsy
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Flask of Ichor/Flash of Cursed Flames
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+    
+       
+                <p>Summoner Accessories:</p><br>
+                <label class="item-label">
+                   Berserker's Glove
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Pygmy Necklace
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Summoning Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Tipsy + Flask of Ichor/Flask of Cursed Flames
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+    
+                <p>Ranger Accessories:</p><br>
+                <label class="item-label">
+                    Quivers/Ranger Emblem
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Reservation Potion/Archery Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Box
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss9" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 
+              
+                <p>General Items:</p><br>
+                    <label class="item-label">
+                        Terraspark Boots
+                        <input type="checkbox" class="task" data-boss="boss9" onchange="checkItems('boss9')">
+                    </label><br>
+                    <label class="item-label">
+                       Fairy Wings
+                        <input type="checkbox" class="task" data-boss="boss9" onchange="checkItems('boss9')">
+                    </label><br>
+                    <label class="item-label">
+                       Shield of Cthulu
+                        <input type="checkbox" class="task" data-boss="boss9" onchange="checkItems('boss9')">
+                    </label><br>
+                    <label class="item-label">
+                        Ankh Shield
+                        <input type="checkbox" class="task" data-boss="boss9" onchange="checkItems('boss9')">
+                    </label><br>
+                    <label class="item-label">
+                        Charm of Myths/Star Veil
+                        <input type="checkbox" class="task" data-boss="boss9" onchange="checkItems('boss9')">
+                    </label><br>
+                    <label class="item-label">
+                        Exquisitely Stuffed
+                        <input type="checkbox" class="task" data-boss="boss9" onchange="checkItems('boss9')">
+                    </label><br>
+                    <label class="item-label">
+                        Endurance Potion/Inferno Potion/Ironskin Potion/Rage Potion/Swiftness Potion/Thorns Potion/Wrath Potion/Regeneration Potion
+                        <input type="checkbox" class="task" data-boss="boss9" onchange="checkItems('boss9')">
+                    </label><br>
+                </div>
+            </div>
+
+        <div class="boss locked" id="boss10">
+            <img src="../images/The_Twins.gif"  class="boss-image"> <!-- Image added here -->
+            <input type="checkbox" id="check10" class="boss-checkbox" disabled>
+            <label for="check10">The Twins</label>
+            <button onclick="toggleDropdown('items10')">+</button>
+            <div class="items" id="items10" style="display: none;">
+                <button class="reset-button" onclick="resetBoss(this)">Reset</button>
+                <p>Melee Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Titanium Armor/Frost Armor/Orichalcum Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss10" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Shadowflame Knife
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Night's Edge
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+            
+    
+                <!-- Ranger Armor -->
+                <p>Ranger Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Frost Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss10" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Onyx Blaster
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Daedalus Stormbow
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+    
+                <!-- Mage Armor -->
+                <p>Mage Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Orichalcum Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss10" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Sky Fracture/Spirit Flame*
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Meteor Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Nimbus Rod/Clinger Staff/Golden Shower
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Summoner Armor -->
+                <p>Summoner Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Obsidian Armor/Spider Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss10" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Firecracker
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Cool Whip
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Sanguine Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Blade Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss10" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Mage Accessories -->
+                <p>Mage Accessories:</p><br>
+                <label class="item-label">
+                    Mana Cloak
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Sorcerer Emblem /Celestial Cuffs
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mana Regeneration Potion + Magic Power Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                
+                <!-- Melee Accessories -->
+                <p>Melee Accessories:</p><br>
+                <label class="item-label">
+                    Berserker's Glove
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Tipsy
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Flask of Ichor/Flash of Cursed Flames
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+    
+                <!-- Summoner Accessories -->
+                <p>Summoner Accessories:</p><br>
+                <label class="item-label">
+                   Berserker's Glove
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Pygmy Necklace
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Summoning Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Tipsy + Flask of Ichor/Flask of Cursed Flames
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+    
+                <p>Ranger Accessories:</p><br>
+                <label class="item-label">
+                    Quivers/Ranger Emblem
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Reservation Potion/Archery Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Box
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss10" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 
+                 
+                <!-- General Items -->
+                <p>General Items:</p><br>
+                    <label class="item-label">
+                        Terraspark Boots
+                        <input type="checkbox" class="task" data-boss="boss10" onchange="checkItems('boss10')">
+                    </label><br>
+                    <label class="item-label">
+                       Fairy Wings
+                        <input type="checkbox" class="task" data-boss="boss10" onchange="checkItems('boss10')">
+                    </label><br>
+                    <label class="item-label">
+                       Shield of Cthulu
+                        <input type="checkbox" class="task" data-boss="boss10" onchange="checkItems('boss10')">
+                    </label><br>
+                    <label class="item-label">
+                        Ankh Shield
+                        <input type="checkbox" class="task" data-boss="boss10" onchange="checkItems('boss10')">
+                    </label><br>
+                    <label class="item-label">
+                        Charm of Myths/Star Veil
+                        <input type="checkbox" class="task" data-boss="boss10" onchange="checkItems('boss10')">
+                    </label><br>
+                    <label class="item-label">
+                        Exquisitely Stuffed
+                        <input type="checkbox" class="task" data-boss="boss10" onchange="checkItems('boss10')">
+                    </label><br>
+                    <label class="item-label">
+                        Endurance Potion/Inferno Potion/Ironskin Potion/Rage Potion/Swiftness Potion/Thorns Potion/Wrath Potion/Regeneration Potion
+                        <input type="checkbox" class="task" data-boss="boss10" onchange="checkItems('boss10')">
+                    </label><br>
+            </div>
+        </div>
+
+        <div class="boss locked" id="boss11">
+            <img src="../images/The_Destroyer.png"  class="boss-image"> <!-- Image added here -->
+            <input type="checkbox" id="check11" class="boss-checkbox" disabled>
+            <label for="check11">The Destroyer</label>
+            <button onclick="toggleDropdown('items11')">+</button>
+            <div class="items" id="items11" style="display: none;">
+                <button class="reset-button" onclick="resetBoss(this)">Reset</button>
+                <p>Melee Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss11" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    True Nights Edge
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    True Excalibur
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+            
+    
+                <!-- Ranger Armor -->
+                <p>Ranger Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss11" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Megashark/Uzi
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Chlorophyte Shotbow/Hallowed Repeater
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+    
+                <!-- Mage Armor -->
+                <p>Mage Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss11" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Venom Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Golden Shower
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Nimbus Rod/Clinger Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Summoner Armor -->
+                <p>Summoner Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss11" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Firecracker + Durendal
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Cool Whip + Durendal
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Sanguine Staff/Optic Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Blade Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss11" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Mage Accessories -->
+                <p>Mage Accessories:</p><br>
+                <label class="item-label">
+                    Mana Cloak
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                   Celestial Emblem
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mana Regeneration Potion + Magic Power Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                <!-- Melee Accessories -->
+                <p>Melee Accessories:</p><br>
+                <label class="item-label">
+                    Fire Gauntlet
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mechanical Glove
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Tipsy
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Flask of Ichor/Flash of Cursed Flames
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+    
+                <!-- Summoner Accessories -->
+                <p>Summoner Accessories:</p><br>
+                <label class="item-label">
+                   Berserker's Glove/Moon Stone
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Pygmy Necklace
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Summoning Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Tipsy + Flask of Ichor/Flask of Cursed Flames
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+    
+                <p>Ranger Accessories:</p><br>
+                <label class="item-label">
+                    Quivers/Ranger Emblem
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Reservation Potion/Archery Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Box
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss11" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 
+                 
+                <!-- General Items -->
+                <p>General Items:</p><br>
+                    <label class="item-label">
+                        Terraspark Boots
+                        <input type="checkbox" class="task" data-boss="boss11" onchange="checkItems('boss11')">
+                    </label><br>
+                    <label class="item-label">
+                       Flame Wings
+                        <input type="checkbox" class="task" data-boss="boss11" onchange="checkItems('boss11')">
+                    </label><br>
+                    <label class="item-label">
+                       Shield of Cthulu
+                        <input type="checkbox" class="task" data-boss="boss11" onchange="checkItems('boss11')">
+                    </label><br>
+                    <label class="item-label">
+                        Ankh Shield
+                        <input type="checkbox" class="task" data-boss="boss11" onchange="checkItems('boss11')">
+                    </label><br>
+                    <label class="item-label">
+                        Charm of Myths/Star Veil
+                        <input type="checkbox" class="task" data-boss="boss11" onchange="checkItems('boss11')">
+                    </label><br>
+                    <label class="item-label">
+                        Exquisitely Stuffed
+                        <input type="checkbox" class="task" data-boss="boss11" onchange="checkItems('boss11')">
+                    </label><br>
+                    <label class="item-label">
+                        Endurance Potion/Inferno Potion/Ironskin Potion/Rage Potion/Swiftness Potion/Thorns Potion/Wrath Potion/Regeneration Potion
+                        <input type="checkbox" class="task" data-boss="boss11" onchange="checkItems('boss11')">
+                    </label><br>
+            </div>
+        </div>
+
+        <div class="boss locked" id="boss12">
+            <img src="../images/Skeletron_Prime.gif"  class="boss-image"> <!-- Image added here -->
+            <input type="checkbox" id="check12" class="boss-checkbox" disabled>
+            <label for="check12">Skeletron Prime</label>
+            <button onclick="toggleDropdown('items12')">+</button>
+            <div class="items" id="items12" style="display: none;">
+                <button class="reset-button" onclick="resetBoss(this)">Reset</button>
+                <p>Melee Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss12" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    True Nights Edge
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    True Excalibur
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+            
+    
+                <!-- Ranger Armor -->
+                <p>Ranger Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss12" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Megashark/Uzi
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Chlorophyte Shotbow/Hallowed Repeater
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+    
+                <!-- Mage Armor -->
+                <p>Mage Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss12" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Venom Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Golden Shower
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Nimbus Rod/Clinger Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Summoner Armor -->
+                <p>Summoner Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss12" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Firecracker + Durendal
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Cool Whip + Durendal
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Sanguine Staff/Optic Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Blade Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss12" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Mage Accessories -->
+                <p>Mage Accessories:</p><br>
+                <label class="item-label">
+                    Mana Cloak
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                   Celestial Emblem
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mana Regeneration Potion + Magic Power Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                <!-- Melee Accessories -->
+                <p>Melee Accessories:</p><br>
+                <label class="item-label">
+                    Fire Gauntlet
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mechanical Glove
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Tipsy
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Flask of Ichor/Flash of Cursed Flames
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+    
+                <!-- Summoner Accessories -->
+                <p>Summoner Accessories:</p><br>
+                <label class="item-label">
+                   Berserker's Glove/Moon Stone
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Pygmy Necklace
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Summoning Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Tipsy + Flask of Ichor/Flask of Cursed Flames
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+    
+                <p>Ranger Accessories:</p><br>
+                <label class="item-label">
+                    Quivers/Ranger Emblem
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Reservation Potion/Archery Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Box
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss12" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 
+                 
+                <!-- General Items -->
+                <p>General Items:</p><br>
+                    <label class="item-label">
+                        Terraspark Boots
+                        <input type="checkbox" class="task" data-boss="boss12" onchange="checkItems('boss12')">
+                    </label><br>
+                    <label class="item-label">
+                       Flame Wings
+                        <input type="checkbox" class="task" data-boss="boss12" onchange="checkItems('boss12')">
+                    </label><br>
+                    <label class="item-label">
+                       Shield of Cthulu
+                        <input type="checkbox" class="task" data-boss="boss12" onchange="checkItems('boss12')">
+                    </label><br>
+                    <label class="item-label">
+                        Ankh Shield
+                        <input type="checkbox" class="task" data-boss="boss12" onchange="checkItems('boss12')">
+                    </label><br>
+                    <label class="item-label">
+                        Charm of Myths/Star Veil
+                        <input type="checkbox" class="task" data-boss="boss12" onchange="checkItems('boss12')">
+                    </label><br>
+                    <label class="item-label">
+                        Exquisitely Stuffed
+                        <input type="checkbox" class="task" data-boss="boss12" onchange="checkItems('boss12')">
+                    </label><br>
+                    <label class="item-label">
+                        Endurance Potion/Inferno Potion/Ironskin Potion/Rage Potion/Swiftness Potion/Thorns Potion/Wrath Potion/Regeneration Potion
+                        <input type="checkbox" class="task" data-boss="boss12" onchange="checkItems('boss12')">
+                    </label><br>
+            </div>
+        </div>
+
+        <div class="boss locked" id="boss13">
+            <img src="../images/Plantera.gif"  class="boss-image"> <!-- Image added here -->
+            <input type="checkbox" id="check13" class="boss-checkbox" disabled>
+            <label for="check13">Plantera</label>
+            <button onclick="toggleDropdown('items13')">+</button>
+            <div class="items" id="items13" style="display: none;">
+                <button class="reset-button" onclick="resetBoss(this)">Reset</button>
+                <p>Melee Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss13" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    True Nights Edge
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    True Excalibur
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+            
+    
+                <!-- Ranger Armor -->
+                <p>Ranger Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss13" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Megashark/Uzi
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Chlorophyte Shotbow/Hallowed Repeater
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+    
+                <!-- Mage Armor -->
+                <p>Mage Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss13" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Venom Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Golden Shower
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Nimbus Rod/Clinger Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Summoner Armor -->
+                <p>Summoner Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss13" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Firecracker + Durendal
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Cool Whip + Durendal
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Sanguine Staff/Optic Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Blade Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss13" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Mage Accessories -->
+                <p>Mage Accessories:</p><br>
+                <label class="item-label">
+                    Mana Cloak
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                   Celestial Emblem
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mana Regeneration Potion + Magic Power Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                
+                <!-- Melee Accessories -->
+                <p>Melee Accessories:</p><br>
+                <label class="item-label">
+                    Fire Gauntlet
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mechanical Glove
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Tipsy
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Flask of Ichor/Flash of Cursed Flames
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+    
+                <!-- Summoner Accessories -->
+                <p>Summoner Accessories:</p><br>
+                <label class="item-label">
+                   Berserker's Glove/Moon Stone
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Pygmy Necklace
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Summoning Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Tipsy + Flask of Ichor/Flask of Cursed Flames
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+    
+                <p>Ranger Accessories:</p><br>
+                <label class="item-label">
+                    Quivers/Ranger Emblem
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Reservation Potion/Archery Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Box
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss13" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 
+                 
+                <!-- General Items -->
+                <p>General Items:</p><br>
+                    <label class="item-label">
+                        Terraspark Boots
+                        <input type="checkbox" class="task" data-boss="boss13" onchange="checkItems('boss13')">
+                    </label><br>
+                    <label class="item-label">
+                       Flame Wings
+                        <input type="checkbox" class="task" data-boss="boss13" onchange="checkItems('boss13')">
+                    </label><br>
+                    <label class="item-label">
+                       Shield of Cthulu
+                        <input type="checkbox" class="task" data-boss="boss13" onchange="checkItems('boss13')">
+                    </label><br>
+                    <label class="item-label">
+                        Ankh Shield
+                        <input type="checkbox" class="task" data-boss="boss13" onchange="checkItems('boss13')">
+                    </label><br>
+                    <label class="item-label">
+                        Charm of Myths/Star Veil
+                        <input type="checkbox" class="task" data-boss="boss13" onchange="checkItems('boss13')">
+                    </label><br>
+                    <label class="item-label">
+                        Exquisitely Stuffed
+                        <input type="checkbox" class="task" data-boss="boss13" onchange="checkItems('boss13')">
+                    </label><br>
+                    <label class="item-label">
+                        Endurance Potion/Inferno Potion/Ironskin Potion/Rage Potion/Swiftness Potion/Thorns Potion/Wrath Potion/Regeneration Potion
+                        <input type="checkbox" class="task" data-boss="boss13" onchange="checkItems('boss13')">
+                    </label><br>
+            </div>
+        </div>
+
+        <div class="boss locked" id="boss14">
+            <img src="../images/Golem.gif"  class="boss-image"> <!-- Image added here -->
+            <input type="checkbox" id="check14" class="boss-checkbox" disabled>
+            <label for="check14">Golem</label>
+            <button onclick="toggleDropdown('items14')">+</button>
+            <div class="items" id="items14" style="display: none;">
+                <button class="reset-button" onclick="resetBoss(this)">Reset</button>
+                <p>Melee Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Chlorophyte Armor/Hallowed Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss14" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Terrablade
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Vampire Knives/Scourge of the Corrupter
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Horsemans Blade
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-melee" onchange="handleArmorSelection(this)">
+                </label><br>
+            
+    
+                <!-- Ranger Armor -->
+                <p>Ranger Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Shroomite Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss14" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Sniper Rifle
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Venus Magnum/Chlorophyte Shotbow
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Stake Launcher/Nail Gun
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-ranger" onchange="handleArmorSelection(this)">
+                </label><br>
+    
+                <!-- Mage Armor -->
+                <p>Mage Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Spectre Armor(Mask + Hood)
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss14" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Bat Scepter/Resonance Scepter
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Golden Shower
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Nimbus Rod/Rainbow Gun
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-mage" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Summoner Armor -->
+                <p>Summoner Armor and Weapons:</p><br>
+                <label class="item-label">
+                    Spooky Armor/Tiki Armor
+                    <input type="checkbox" class="task armor-checkbox" data-boss="boss14" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Firecracker + Dark Harvest
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Dark Harvest + Morning Star
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Desert Tiger Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <label class="item-label">
+                    Raven Staff/Deadly Sphere Staff
+                    <input type="checkbox" class="task weapon-checkbox" data-boss="boss14" data-class="armor-summoner" onchange="handleArmorSelection(this)">
+                </label><br>
+                <!-- Mage Accessories -->
+                <p>Mage Accessories:</p><br>
+                <label class="item-label">
+                    Mana Cloak
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                   Celestial Emblem
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mana Regeneration Potion + Magic Power Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-mage" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 
+                
+                <!-- Melee Accessories -->
+                <p>Melee Accessories:</p><br>
+                <label class="item-label">
+                    Fire Gauntlet
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Mechanical Glove/Berserker's Glove
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Tipsy
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Flask of Ichor/Venom
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-melee" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+    
+                <!-- Summoner Accessories -->
+                <p>Summoner Accessories:</p><br>
+                <label class="item-label">
+                   Berserker's Glove/Moon Stone
+                    <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                </label><br>
+                <label class="item-label">
+                    Papyrus Scarab
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Moon Stone
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Froen Shield
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Summoning Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Tipsy + Flask of Ichor/Flask of Cursed Flames
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-summoner" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+    
+                <p>Ranger Accessories:</p><br>
+                <label class="item-label">
+                    Quivers/Ranger Emblem
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Reservation Potion/Archery Potion
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 <label class="item-label">
+                    Ammo Box
+                     <input type="checkbox" class="task accessory-checkbox" data-boss="boss14" data-class="accessory-ranger" onchange="handleArmorSelection(this)" disabled>
+                 </label><br>
+                 
+                 
+                <!-- General Items -->
+                <p>General Items:</p><br>
+                    <label class="item-label">
+                        Terraspark Boots
+                        <input type="checkbox" class="task" data-boss="boss14" onchange="checkItems('boss14')">
+                    </label><br>
+                    <label class="item-label">
+                       Spooky Wings
+                        <input type="checkbox" class="task" data-boss="boss14" onchange="checkItems('boss14')">
+                    </label><br>
+                    <label class="item-label">
+                       Master Ninja Gear
+                        <input type="checkbox" class="task" data-boss="boss14" onchange="checkItems('boss14')">
+                    </label><br>
+                    <label class="item-label">
+                        Ankh Shield
+                        <input type="checkbox" class="task" data-boss="boss14" onchange="checkItems('boss14')">
+                    </label><br>
+                    <label class="item-label">
+                        Charm of Myths/Star Veil
+                        <input type="checkbox" class="task" data-boss="boss14" onchange="checkItems('boss14')">
+                    </label><br>
+                    <label class="item-label">
+                        Exquisitely Stuffed
+                        <input type="checkbox" class="task" data-boss="boss14" onchange="checkItems('boss14')">
+                    </label><br>
+                    <label class="item-label">
+                        Endurance Potion/Inferno Potion/Ironskin Potion/Rage Potion/Swiftness Potion/Thorns Potion/Wrath Potion/Regeneration Potion
+                        <input type="checkbox" class="task" data-boss="boss14" onchange="checkItems('boss14')">
+                    </label><br>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
